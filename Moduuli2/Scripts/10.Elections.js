@@ -20,7 +20,10 @@ for (let voter = 1; voter <= VOTERNUMBER; voter++) {
 }
 
 const VOITTAJAIDLISTA = CANDIDATELIST.map(id => {return id.votes});
-const VOITTAJAVOTES = Math.max.call(...VOITTAJAIDLISTA);
+const VOITTAJAVOTES = Math.max(...VOITTAJAIDLISTA);
+
+console.log(VOITTAJAVOTES)
+console.log(VOITTAJAIDLISTA)
 
 const WINNERLIST = [];
 
