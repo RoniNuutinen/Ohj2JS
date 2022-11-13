@@ -3,11 +3,11 @@ const NUMBERLIST = [];
 let syöte;
 
 do {
-    syöte = parseFloat(prompt("Syötä luku"));
-    if (!(NUMBERLIST.includes(syöte))) {
+    if (!(NUMBERLIST.includes(syöte)) && typeof syöte !== "undefined") {
         NUMBERLIST.push(syöte);
     }
-} while (!(syöte in NUMBERLIST));
+    syöte = parseFloat(prompt("Syötä luku"));
+} while (!(NUMBERLIST.includes(syöte)));
 
 NUMBERLIST.sort((a,b) => a - b);
 
