@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TV-Opas</title>
+    <script src="TVopas.js" defer></script>
+    <link href="TVopas.css" rel="stylesheet">
+</head>
+<body>
+<form action="https://api.tvmaze.com/search/shows">
+    <input id="query" name="q" type="text" placeholder="Search input">
+    <input type="submit" value="Search">
+</form>
+<ul id="results">
+</ul>
+<dialog>
+    <span>&#x2715;</span>
+    <iframe name="iF"></iframe>
+</dialog>
+</body>
+</html>
